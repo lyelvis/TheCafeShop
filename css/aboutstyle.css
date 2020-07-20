@@ -1,0 +1,145 @@
+body{
+    margin:0;
+    font-family: 'Oxygen', sans-serif;
+    /* text-align: center; */
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.title-container{
+    width: 95%; /* a width suitable to the webpage size, does not exceed it otherwise it will wrap around.*/
+    max-width: 75em; /* adjust the size of our container */
+    margin: 0 auto; /* stops the text from touching the side of the screen */
+    background:rgba(192, 107, 107, 0.75);
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+.home-hero{
+    background-image: url(../img/aboutbackground.jpg);
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    /* basically helps us center everything inside home-hero */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    
+    /* Background styles */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.title {
+    font-size: 5em;
+    margin: 1em auto; /* centers inside of our container*/
+    font-weight: 900;
+    color: rgb(238, 255, 0);
+}
+/* HEADER
+************************************************************/
+header{
+    /* background-color: rgba(114, 114, 179,.7); */
+    position: absolute;
+    width: 95%;
+    margin: 0 auto;
+}
+.logo{
+    width: 15%;
+}
+nav{
+    float: right;
+}
+.nav-links ul{
+    list-style: none;
+    white-space: nowrap;
+}
+.nav-links a{
+    text-decoration: none;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+}
+.nav-links li{
+    display: inline-block;
+    margin-left: 3.5em;
+}
+.nav-links .current{
+    font-size: 1.6em;
+    color: yellow;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+/* OWNER DESCRIPTION
+**********************************************************/
+.about-owners{
+    background:url(../img/elvispretty.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    /* centers all the content in the container  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 33.3333%;
+    height: 100vh;
+    background-color: rgba(255, 0, 0,.7);
+    float: left;
+}
+.about-owners img{
+    width: 15em;
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+.owner-descp{
+    display: inline-block;
+    width: 66.66667%;
+    height: 15em;
+    /* background-color: rgba(138, 43, 226,.7); */
+}
+.owner-descp h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    margin-top: 1em;
+}
+.owner-descp p{
+    font-size: 1.5em;
+    margin: 2em;
+}
+@media (max-width: 611px){
+    html{
+        font-size: .5em;
+    }
+}
+
+

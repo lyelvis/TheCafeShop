@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.container{
+    width: 95%; /* a width suitable to the webpage size, does not exceed it otherwise it will wrap around.*/
+    max-width: 75em; /* adjust the size of our container */
+    margin: 0 auto; /* stops the text from touching the side of the screen */
+    /* background:rgba(192, 107, 107, 0.75); */
+}
+.questionarie{
+    width: 90%;
+    height: auto;
+    margin: 2em auto;
+    background:rgba(255, 255, 255,.75);
+    border-radius: 5px;
+    padding: 20px;
+}
+.home-hero{
+    background-image: url(../img/aboutbackground.jpg);
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    /* basically helps us center everything inside home-hero */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    
+    /* Background styles */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.title {
+    font-size: 5em;
+    margin-bottom: 1.5rem; /* creates the space between the title and button beneath it */
+    font-weight: 900;
+    margin-top: 1em;
+    color: rgb(238, 255, 0);
+}
+/* HEADER
+************************************************************/
+header{
+    position: absolute;
+    width: 95%;
+    margin: 0 auto;
+}
+.logo{
+    width: 15%;
+}
+nav{
+    float: right;
+}
+.nav-links ul{
+    list-style: none;
+    white-space: nowrap;
+}
+.nav-links a{
+    text-decoration: none;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+}
+.nav-links li{
+    display: inline-block;
+    margin-left: 3.5em;
+}
+.nav-links .current{
+    font-size: 1.6em;
+    color: yellow;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+/* CONTACT FILL OUT
+***********************************************/
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: .75em;
+    border: 1px solid #ccc;
+    border-radius: .25em;
+    box-sizing: border-box;
+    margin-top:6px;
+    margin-bottom: 1em;
+    resize: vertical;
+}
+
+input[type=submit]{
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #45a049;
+}
